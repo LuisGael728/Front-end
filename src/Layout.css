@@ -1,0 +1,51 @@
+/* layout.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #008e5a 50%, #f1f1f1 50%);
+}
+
+.date-time-container {
+  text-align: center;
+  color: #fff;
+  margin: 40px 0 0 0;
+}
+
+.date-time-container p {
+  font-family: 'Rotobo', sans-serif;
+  font-size:22px;
+  margin: 5px 0 0 0 ;
+}
+.date-time-container span {
+  font-family: 'Rotobo', sans-serif;
+  font-size: 60px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.layout-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  background-color: #00000000; 
+  width: 100%;
+}
+
+.layout-footer {
+  font-weight: 600;
+  flex-shrink: 0;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}

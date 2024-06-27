@@ -1,0 +1,91 @@
+/* Importación de las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Estilos globales del cuerpo */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px 0;
+}
+
+/* Estilo de la tabla de asistencia */
+.attendance-table-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 2px splid #ccc;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+/*Estilo para cada tabla de asistencia*/
+.checador-table {
+  width: 100%; 
+  max-width: 250px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+}
+
+/*Estilo para el título de cada tabla de asistencia*/
+.checador-table h2 {
+  font-size: 16px;
+  padding: 8px;
+  background-color: #e7e7e7;
+  border: 2px solid #ccc;
+  border-bottom: none;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 8px;
+}
+
+/*Estilo prara la información del usuario en la lista*/
+.user-info {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  font-weight: 100;
+}
+
+
+.user-info:not(:first-child){
+  border-top: none;
+}
+
+.user-info:first-child::before{
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+/* Animación de entrada cabe aclarar que no esta funcional*/
+.pop-up {
+  animation: popUpAnimation 0.5s ease forwards;
+}
+
+@keyframes popUpAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
